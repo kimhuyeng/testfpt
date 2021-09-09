@@ -1,0 +1,150 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.hello{
+    border:none;
+}
+.hello:hover{
+    background-color: orangered;
+}
+.s1{
+    border: 2px solid black;
+    margin: 10px;
+    padding-left:10px;
+}
+.s2 {
+    border: 2px solid black;
+    margin: 10px;
+    padding-left:10px;
+}
+.s3 {
+    border: 2px solid black;
+    margin: 10px;
+    padding-left:10px;
+}
+.hello {
+    margin-top: 50px;
+    margin-left: 10px;
+    padding-right:20px;
+    padding-left:20px;
+    text-align: center;
+}
+.in1{
+    border: 2px solid black;
+    padding-left:10px;
+    margin-top: 50px;
+    
+}
+.in2 {
+    border: 2px solid black;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.in3 {
+    border: 2px solid black;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.bor{
+    border: none;
+}
+.bor:hover{
+    background-color: black;
+    color: white;
+}
+.bor1{
+    border:none;
+    text-align:center;
+}
+.bor1:hover {
+    background-color: black;
+    color: white;
+}
+.type {
+    width: 100%;
+    padding: 5px;
+    margin: 8px;
+    text-align: justify;
+}
+   .type:focus {
+        border-color: dodgerblue;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+* {
+    box-sizing: border-box;
+}
+#main{
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
+#menu{
+    height: 70px;
+    width: 100%;
+    margin-left:200px;
+}
+#profile{
+    width: 200px;
+    height: 600px;
+    float:left;
+}
+#content{
+    width:82%;
+    height:600px;
+    float: left;
+    border:solid black;
+}
+#footer{
+    background-color:purple;
+    clear:both;
+    width:100%;
+}
+.but{
+    border:none;
+    text-align:left;
+    margin-top:25px;
+    padding:5px;
+}
+.but:hover{
+    background-color:orangered;
+}.fix {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.meno {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+    /* Change the link color on hover */
+    .meno:hover {
+        background-color: #555;
+        color: white;
+    }
