@@ -40,7 +40,7 @@
 }
 .social{
     display:block;
-    align-items:flex-end;
+    vertical-align:bottom;
     width: 25px;
     margin: 40px auto 0;
     cursor: pointer;
@@ -56,7 +56,6 @@
 }
 
 .bubble {
-    margin-left:auto;
     width: 100%;
     display: flex;
     align-items: flex-start;
