@@ -1,0 +1,61 @@
+﻿@model WebApplication10.Models.LoginModel
+<div class="nav">
+
+    <div class="social">
+        <img src="~/Models/hinhAnh/Coventic Webpage images/fb.png"/>
+        <img src="~/Models/hinhAnh/Coventic Webpage images/ig.png"/>
+        <img src="~/Models/hinhAnh/Coventic Webpage images/tw.png"/>
+        <img src="~/Models/hinhAnh/Coventic Webpage images/share.png"/>
+    </div>
+    <div class="bubble">
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+
+</div>
+    <div class="login">
+        <div>
+            @using (Html.BeginForm("Login", "User", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div>
+                    <button type="button" class="buut"> Welcome </button>
+                </div>
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Đăng nhập" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
