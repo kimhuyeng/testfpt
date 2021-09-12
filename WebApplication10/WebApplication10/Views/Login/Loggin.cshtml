@@ -1,0 +1,43 @@
+﻿@model WebApplication10.Models.LoginModel
+    <div class="social">
+        <img src="~/Models/hinhAnh/Coventic Webpage images/fb.png"/>
+        <img src="~/Models/hinhAnh/Coventic Webpage images/ig.png"/>
+        <img src="~/Models/hinhAnh/Coventic Webpage images/tw.png"/>
+        <img src="~/Models/hinhAnh/Coventic Webpage images/share.png"/>
+    </div>
+    <div class="bubble">
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+        <img src="~/Models/hinhAnh/Coventic Webpage images/bubble.png" />
+
+</div>
+<div class="nav">
+    <div class="login">
+        <div>
+           <form action="/Login/Loggin" method="get">
+               <label> Tên đăng nhập</label>
+               <input type="text" name="Username" />
+               <label> Mật Khẩu </label>
+               <input type="password" name="password"/>
+
+               <button type="submit"> Đăng nhập </button>
+                   @if(ViewBag.thongbao != null)
+                   {
+                       <p style="color:red">
+                           @ViewBag.thongBao
+                       </p>
+                   }
+           </form>
+        </div>
+    </div>
+</div>
+
